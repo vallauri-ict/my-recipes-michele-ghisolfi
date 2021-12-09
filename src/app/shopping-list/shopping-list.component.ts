@@ -18,4 +18,18 @@ export class ShoppingListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onIngredientAdded(newIngredient: IngredientModel) {
+    let push = true
+    for (const item of this.ingredients) {
+      if (item.name.toUpperCase() == newIngredient.name.toUpperCase()) {
+        push = false
+        item.amount += newIngredient.amount
+        break;
+      } 
+    }
+    if (push) {
+      this.ingredients.push(newIngredient)
+    }
+    
+  }
 }
