@@ -4,7 +4,20 @@
       "id": 0,
       "name": "Spaghetti alla chitarra",
       "description": "Un particolare tipo di pasta che ...",
-      "imagePath": "https://images.lacucinaitaliana.it/wp-content/uploads/2020/06/03204258/Pasta-alla-chitarra-con-ragu-di-polo.jpg"
+      "imagePath": "https://images.lacucinaitaliana.it/wp-content/uploads/2020/06/03204258/Pasta-alla-chitarra-con-ragu-di-polo.jpg",
+      "ingredients": [{
+        "name": "Farina",
+        "amount": 100
+      },
+      {
+        "name": "Uovo",
+        "amount": 100
+      },
+      {
+        "name": "Olio",
+        "amount": 100
+      }
+    ]
     },
     {
       "id": 1,
@@ -24,5 +37,8 @@
       "description": "Classico dolce italiano con mascarpone ...",
       "imagePath": "https://toscanedigusto.com/wp-content/uploads/2019/09/maxresdefault.jpg"
     }
-  ]
+  ],
+  "ingredients": [{
+    
+  }]
 }

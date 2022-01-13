@@ -10,33 +10,35 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col-xs-12">
-    <div class="button-group">
-      <button class="btn btn-primary dropdown-toggle">
-        Manage Recipe
-        <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu">
-        <li><a href="#">To Shopping List</a></li>
-        <li><a href="#">Edit Recipe</a></li>
-        <li><a href="#">Delete Recipe</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+
 
 <div class="row">
   <div class="col-xs-12">{{ recipeService.selectedRecipe.description }}</div>
 </div>
 
 <div class="row">
-  <div class="col-xs-12">Ingredients
+  <div class="col-xs-12">Ingredients:
     <ul class="list-group" style="list-style: none;">
       <li *ngFor="let ingredient of recipeService.selectedRecipe.ingredients">
         {{ ingredient.name }} - {{ ingredient.amount }}
       </li>
     </ul>
   </div>
+</div>
 
+<div class="row">
+  <div class="col-xs-12">
+    <div class="button-group" appDropdown>
+      <button class="btn btn-primary dropdown-toggle">
+        Manage Recipe
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li onclick="sendToShoppingList()"><a href="#">To Shopping List</a></li>
+        <li><a href="#">Edit Recipe</a></li>
+        <li><a href="#">Delete Recipe</a></li>
+      </ul>
+    </div>
+    <!-- <button class="btn btn-primary"   To Shopping List </button> -->
+  </div>
 </div>
